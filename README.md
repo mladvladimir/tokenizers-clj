@@ -11,6 +11,13 @@ clj-rust.core=> (get-tokens
                     "piece of text")
 ```
 
+You can get the `.json` and `.txt` files here:
+
+```
+https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-vocab.json
+https://s3.amazonaws.com/models.huggingface.co/bert/roberta-base-merges.txt
+```
+
 ## License
 Copyright © 2020 Vladimir Mladenovic
 
