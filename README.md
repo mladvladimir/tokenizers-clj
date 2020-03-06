@@ -5,9 +5,9 @@ From repl:
 ```
 clj-rust.core=> (init!)
 clj-rust.core=> (clojure.lang.RT/loadLibrary "tokenizers")
-clj-rust.core=> (get-tokens 
-                    "./path/to/vocab.json" 
-                    "./path/to/merges.txt" 
+clj-rust.core=> (get-tokens
+                    "./path/to/vocab.json"
+                    "./path/to/merges.txt"
                     "piece of text")
 ```
 
