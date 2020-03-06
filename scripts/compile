@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -eo pipefail
+
+# build the rust library
+
+cd rust/tokenizers
+cargo build --release
+cp target/release/libtokenizers.dylib ../../clojure/resources

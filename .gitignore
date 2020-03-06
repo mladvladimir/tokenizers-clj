@@ -1,0 +1,17 @@
+/clojure/target
+/clojure/resources/libtokenizers.dylib
+/rust/tokenizers/target
+pom.xml
+pom.xml.asc
+*.jar
+*.class
+/.lein-*
+/.nrepl-port
+.hgignore
+.hg/
+.idea
+*.iml
+jena-docs
+.cpcache
+.rebl
+/.nrepl-history
