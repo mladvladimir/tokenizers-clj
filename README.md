@@ -1,14 +1,12 @@
 Run `script/compile` to build the Rust lib.
 
-From repl:
+Enter the `clojure` directory and start a REPL with `lein repl`.
 
 ```
-clj-rust.core=> (init!)
-clj-rust.core=> (clojure.lang.RT/loadLibrary "tokenizers")
-clj-rust.core=> (get-tokens
-                    "./path/to/vocab.json"
-                    "./path/to/merges.txt"
-                    "piece of text")
+(def t (get-tokenizer "roberta-base-vocab.json" "roberta-base-merges.txt")) ;; this contains a pointer to a tokenizer
+(time (get-tokens t "hello there"))
+"Elapsed time: 0.074647 msecs"
+["hell" "ot" "here"]
 ```
 
 You can get the `.json` and `.txt` files here:
